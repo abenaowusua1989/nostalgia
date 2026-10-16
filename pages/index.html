@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="veiwpoint" content="width=device-width, initial-scale=1.0">
+    
+     <link href="../assets/images/FastGlobe.png" rel="icon" type="images/icon">
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+
+    <title> 
+        Nostalgia Core - Home
+    </title>
+<head>
+    <script src="https://cdn.socket.io"></script>
+    <script>
+        // connect to your python server
+        var socket = io();
+
+        socket.on('connect', () => {
+            console.log("connected to the chat server!")
+        })
+    </script>
+</head>
+<body>
+   
+<audio controls autoplay loop hidden>
+  <source src="../assets/audio/school rooftop.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+
+     <div id="header-div">
+        <a href="../pages/index.html"><img src="../assets/images/FastGlobe.png" height="50" width="50"></a>
+        
+        Frutiger Aero
+
+        <a href="../pages/index.html"><img src="../assets/images/FastGlobe.png" height="50" width="50"></a>
+        
+    </div>
+
+    <div id="banner-div">
+        <img src="../assets/images/WindowsXPGIF.gif" width="1885" height="225">
+    </div>
+
+
+    <div id="nav-div">
+<ul>
+    <li><a href="../pages/index.html">HOME</a></li> 
+    <li><a href="../pages/Birthday.html">BIRTHDAY</a></li>
+    <li><a href="../pages/school.html">SCHOOL</a></li>
+    <li><a href="../pages/sleep.html">SLEEP</a></li>
+</ul>    
+    </div>
+
+    <div id="sidebar-div">
+        <img src="../assets/images/Globe.png" height="50" width="50"> welcome to the web! <div>Windows live email - abenaowusuaaaa@escargot.chat</div><img src="../assets/images/Globe.png" height="50" width="50">
+    </div>
+
+<div id="map">
+    <h2>Explore the World</h2>
+
+    <iframe
+        src="https://www.google.com/maps?q=Manchester&output=embed"
+        width="300"
+        height="225">
+    </iframe>
+</div>
+
+</body>
+<style>
+    body{
+        background-image: url('../assets/images/CleanCity.jpg');
+        background-repeat: no-repeat;
+    }
+
+    #message-container {
+        width: 80%;
+        max-width: 1200px;
+    }
+
+     #message-container div {
+      background-color: #CCC;
+      padding: 5px;
+    }
+
+    #message-container div:nth-child(2n) {
+      background-color: #FFF;
+    }
+
+    #send-container {
+      position: fixed;
+      padding-bottom: 30px;
+      bottom: 0;
+      background-color: white;
+      max-width: 1200px;
+      width: 80%;
+      display: flex;
+    }
+
+    #message-input {
+      flex-grow: 1;
+    }
+</style>
+</html>
